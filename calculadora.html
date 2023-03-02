@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercearia do Seu João</title>
+    <link href="calculadora.css" rel="stylesheet">
+    <link rel="icon" href="celular.png">
+</head>
+<body>
+    <fieldset id="seujoao">
+        <h1>Valores</h1>
+     </fieldset>
+     <fieldset id="calculadora">
+        <h3>Calculadora</h3>
+    </fieldset>
+    <div class="valor1">
+        <form method="post">
+            <label>R$:</label>
+            <input type="number" size="43" name="cpf" placeholder="Digite aqui" maxlength="90" required>
+        </form>
+    </div>
+    <div class="valor2">
+        <form method="post">
+            <label>R$:</label>
+            <input type="number" size="43" name="cpf" placeholder="Digite aqui" maxlength="90" required>
+        </form>
+    </div>
+    <div class="adicao">
+        <input type="radio" name="div-web" value="adolecente" required>
+            <label>Adição + </label>
+    </div>
+    <div class="subtracao">
+        <input type="radio" name="div-web" value="adolecente" required>
+            <label>Subtração - </label>
+    </div>
+    <div class="multiplicacao">
+        <input type="radio" name="div-web" value="adolecente" required>
+            <label>Multiplicação x </label>
+    </div>
+    <div class="divisao">
+        <input type="radio" name="div-web" value="adolecente" required>
+            <label>Divisão / </label>
+    </div>
+    <div class="calcular">
+        <input type="submit" name="Calcular" value="Calcular">
+    </div>
+    <figure>
+        <img src="melancia.png" width="75" height="35">
+    </figure>
+    <fieldset id="total">
+        <h3>Total</h3>
+    </fieldset>
+    <div class="total">
+        <input type="number" name="login" placeholder="Total" size="30" required>
+    </div>    
+    <!-- Plugin VLibras --> 
+    <div vw class="enabled"> 
+        <div vw-access-button class="active"></div> 
+            <div vw-plugin-wrapper> <div class="vw-plugin-top-wrapper"></div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script> 
+    <script> 
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+     </script> <!-- Plugin VLibras -->
+</body>
+</html>
